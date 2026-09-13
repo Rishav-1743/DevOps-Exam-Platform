@@ -19,6 +19,34 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 438424052758.dkr.ecr.us-east-1.amazonaws.com/devops-exam-backend:v2   #As per ECR repository_id 
+          image: 438424052758.dkr.ecr.us-east-1.amazonaws.com/devops-exam-backend:v4
           ports:
             - containerPort: 5000
+     env:
+
+        - name: DB_HOST
+          valueFrom:
+            secretKeyRef:
+              name: db-secret
+              key: DB_HOST
+
+
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: db-secret
+              key: DB_USER
+
+
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: db-secret
+              key: DB_PASSWORD
+
+
+        - name: DB_NAME
+          valueFrom:
+            secretKeyRef:
+              name: db-secret
+              key: DB_NAME
