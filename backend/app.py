@@ -13,10 +13,10 @@ app.secret_key = os.getenv('FLASK_SECRET_KEY', 'devops-exam-secret-key')
 
 def get_db_connection():
     return mysql.connector.connect(
-        host=os.getenv('MYSQL_HOST', 'exam-platform-db.cwb6qummqfvq.us-east-1.rds.amazonaws.com'),
-        user=os.getenv('MYSQL_USER', 'admin'),
-        password=os.getenv('MYSQL_PASSWORD', 'Rishav13!'),
-        database=os.getenv('MYSQL_DATABASE', 'exam-platform-db')
+        host=os.getenv('DB_HOST'),
+        user=os.getenv('DB_USER'),
+        password=os.getenv('DB_PASSWORD'),
+        database=os.getenv('DB_NAME')
     )
 
 def read_certificate_template():
