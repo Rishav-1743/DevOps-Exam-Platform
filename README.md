@@ -64,12 +64,27 @@ This project demonstrates how a real-world application can be deployed, managed,
 - Docker Registry --- (Stores and distributes container images)
 
 ## Kubernetes
-- Pods ---(Runs application containers)
-- Deployments ---(Manages application replicas and updates)
-- Services ---(Enables communication between application components )
-- Namespaces ---(Provides resource isolation)
-- LoadBalancer Service ---(Exposes application externally through AWS Load Balancer)
+- Pods  
+  - Runs application containers (Frontend and Backend services)
 
+- Deployments  
+  - Manages application replicas, rolling updates, and ensures desired pod state
+
+- Services  
+  - Enables communication between application components inside the cluster
+
+- Namespaces  
+  - Provides resource isolation and organizes Kubernetes resources
+
+- Secrets  
+  - Securely stores sensitive information such as database credentials (DB host, username, password, and database name)
+  - Injects database configuration into backend pods using environment variables
+
+- LoadBalancer Service  
+  - Exposes the application externally through an AWS Elastic Load Balancer
+
+- Amazon EKS Worker Nodes  
+  - Provides compute capacity to run application workloads inside the Kubernetes cluster
 
 ## Tools
 - kubectl ---(Manages Kubernetes resources)
