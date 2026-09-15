@@ -73,14 +73,6 @@ Database verification was performed by checking the stored records.
 <img width="547" height="586" alt="Database_1" src="https://github.com/user-attachments/assets/3e51194c-0b16-4f75-93f2-07469ebdbc4b" />
 
 
-Example:
-
-```sql
-SELECT * FROM results;
-
----
-SELECT * FROM results;
-
 ---
 
 ## 07. Application UI
