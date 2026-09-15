@@ -79,17 +79,20 @@ Example:
 SELECT * FROM results;
 
 ---
-**## 07. Application UI**
+SELECT * FROM results;
+
+---
+
+## 07. Application UI
+
 The DevOps Exam Platform application is accessible through the Load Balancer endpoint.
 
-Users can access the application interface and interact with the exam platform.
-
-<img width="1197" height="677" alt="Application_page" src="https://github.com/user-attachments/assets/df34ff15-b830-4379-a6db-496a80a81c3b" />
+<img width="1197" height="677" alt="Application_page" src="https://github.com/user-attachments/assets/2851136f-272d-4a28-8e2d-22b85d3d1705" />
 
 
 ---
 
-**## 08. Database Records**
+## 08. Exam Results
 
 After completing the exam, results are generated successfully and displayed to the user.
 
@@ -97,4 +100,4 @@ This confirms the complete application flow:
 
 User → Frontend → Backend API → Database → Result
 
-<img width="1160" height="669" alt="Result_page" src="https://github.com/user-attachments/assets/fe88e197-c118-4ca8-87a5-30393ae84c66" />
+<img width="1160" height="669" alt="Result_page" src="https://github.com/user-attachments/assets/7490584f-de92-4321-be7b-3b7d273fb556" />
